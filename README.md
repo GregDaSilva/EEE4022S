@@ -19,3 +19,6 @@ https://github.com/GregDaSilva/EEE4022S/blob/main/Find_Distance.m
 
 ## Find World Points using Stereo Parameters
 https://github.com/GregDaSilva/EEE4022S/blob/main/Find_World_Coordinates.m
+
+## Extract Frames from a video file
+https://github.com/GregDaSilva/EEE4022S/blob/main/extract_frames_opencv.py
