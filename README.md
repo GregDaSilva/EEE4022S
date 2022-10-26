@@ -16,3 +16,6 @@ https://github.com/GregDaSilva/EEE4022S/blob/main/Find_Binary_Area.m
 
 ## Find Distance to a point
 https://github.com/GregDaSilva/EEE4022S/blob/main/Find_Distance.m
+
+## Find World Points using Stereo Parameters
+https://github.com/GregDaSilva/EEE4022S/blob/main/Find_World_Coordinates.m
