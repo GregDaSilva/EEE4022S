@@ -34,5 +34,5 @@ https://github.com/GregDaSilva/EEE4022S/blob/main/extract_frames_opencv.py
 
 ## Detect Pancake Ice Floes
 This program takes an image from the Marginal Ice Zone (MIZ) in the Southern Ocean (SO) and outputs pancake ice floes detected in the image. 
-It is best to use this program with images facing the ocean without any interferences from a ship or bright light in the sky.
+It is best to use this program with images facing the ocean without any interferences from a ship or bright light in the sky.\
 https://github.com/GregDaSilva/EEE4022S/blob/main/edgeDetection.m 
