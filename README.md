@@ -6,7 +6,7 @@ The aim of this project is to develop an image processing and parameter extracti
 This project forms the preliminary investigation for extracting and estimating size and shape of pancake ice floes from images.
 
 ## Calibrate Stereo Set-up
-This program calibrates stereo parameters using checkerboard images captured during the calibration process.
+This program calibrates stereo parameters using checkerboard images captured during the calibration process.\
 https://github.com/GregDaSilva/EEE4022S/blob/main/Rugby_Field_StereoCamCalibrate.m
 
 ## Read Pixel Coordinates
