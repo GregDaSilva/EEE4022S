@@ -1,7 +1,8 @@
 # EEE4022S
 EEE Final Year Project
 
-This repository contains the code used for Pancake Ice Size Estimation.
+This repository contains the code used for EEE4022S Final Year Project. The aim of this project is develop an image processing and parameter extraction algorithm. This project forms the preliminary investigation for extracting and estimating size and shape of pancake ice floes from images.
+
 ## Calibrate Stereo Set up
 https://github.com/GregDaSilva/EEE4022S/blob/main/Rugby_Field_StereoCamCalibrate.m
 
