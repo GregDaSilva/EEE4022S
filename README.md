@@ -19,7 +19,7 @@ https://github.com/GregDaSilva/EEE4022S/blob/main/Find_Distance.m
 
 ## Find World Points using Stereo Parameters
 This program takes in multiple matched points from stereo image pairs and produces 3D world points to determine the distance between pixel points in meters. 
-This is useful in finding the size of objects.
+This is useful in finding the size of objects.\
 https://github.com/GregDaSilva/EEE4022S/blob/main/Find_World_Coordinates.m
 
 ## Find Number of Shaded Pixels in Binary Image
