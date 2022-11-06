@@ -7,9 +7,6 @@ This repository contains the code used for the EEE4022S Final Year Project, RAV2
 This program calibrates stereo parameters using checkerboard images captured during the calibration process.
 https://github.com/GregDaSilva/EEE4022S/blob/main/Rugby_Field_StereoCamCalibrate.m
 
-## Rugby Field Calibration Script
-https://github.com/GregDaSilva/EEE4022S/blob/main/Rugby_Field_StereoCamCalibrate.m
-
 ## Read Pixel Coordinates
 https://github.com/GregDaSilva/EEE4022S/blob/main/Read_Stereo_Pixel_Coordinates.m
 
