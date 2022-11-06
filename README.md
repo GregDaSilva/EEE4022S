@@ -10,11 +10,11 @@ This program calibrates stereo parameters using checkerboard images captured dur
 https://github.com/GregDaSilva/EEE4022S/blob/main/Rugby_Field_StereoCamCalibrate.m
 
 ## Read Pixel Coordinates
-This program is essential for the triangulation process and allows a person to read pixel coordinates from stereo image pairs.
+This program is essential for the triangulation process and allows a person to read pixel coordinates from stereo image pairs.\
 https://github.com/GregDaSilva/EEE4022S/blob/main/Read_Stereo_Pixel_Coordinates.m
 
 ## Find Distance to a Point
-THis program allows a user to enter matched pixel coordinates from stereo images and with the stereo parameters generated through calibration, the distance from the camera to the point (typically an object) can be found.
+THis program allows a user to enter matched pixel coordinates from stereo images and with the stereo parameters generated through calibration, the distance from the camera to the point (typically an object) can be found.\
 https://github.com/GregDaSilva/EEE4022S/blob/main/Find_Distance.m
 
 ## Find World Points using Stereo Parameters
@@ -29,7 +29,7 @@ The dimensions of a pixel needs to be determined for this the area to be estimat
 https://github.com/GregDaSilva/EEE4022S/blob/main/Find_Binary_Area.m
 
 ## Extract Frames from a Video File
-This program allows a user to extract frames from a video at a specified rate.
+This program allows a user to extract frames from a video at a specified rate.\
 https://github.com/GregDaSilva/EEE4022S/blob/main/extract_frames_opencv.py
 
 ## Detect Pancake Ice Floes
