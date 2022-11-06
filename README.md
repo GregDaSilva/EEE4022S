@@ -25,7 +25,7 @@ https://github.com/GregDaSilva/EEE4022S/blob/main/Find_World_Coordinates.m
 ## Find Number of Shaded Pixels in Binary Image
 This program allows a person to count the number of pixels in a binary image. 
 These pixels are shaded as white in a binary image. Knowing the number of pixels can be useful in determining the area of an object. 
-The dimensions of a pixel needs to be determined for this the area to be estimated.
+The dimensions of a pixel needs to be determined for this the area to be estimated.\
 https://github.com/GregDaSilva/EEE4022S/blob/main/Find_Binary_Area.m
 
 ## Extract Frames from a Video File
