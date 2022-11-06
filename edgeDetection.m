@@ -1,30 +1,35 @@
-%%
+%% Detect pancake ice floes from an image
+
+% read image and convert to greyscale.
 I1 = im2gray(imread('C:\Users\Donovan Da Silva\OneDrive - University of Cape Town\University\Fourth Year\EEE4022S\Agi Data\Buoy Retrievals\Buoy Retrieval - 24 July 16h00\SHARC 1\GX010181-frames\frame0-00-01.00.jpg'));
+
+% Display image
 imshow(I1)
 title('Original Image');
-%%
+
+%% Create a binary image from image I1 using name-value pairs to control aspects of adaptive thresholding.
 bw = imbinarize(I1,"adaptive","ForegroundPolarity","bright");
 imshow(bw)
-%%
+
+%% Remove all connected components (objects) that have fewer than P pixels from the binary image bw, producing another binary image, bw. This operation is known as an area opening.
 bw = bwareaopen(bw,500);
 imshow(bw)
-%%
+
+%%  Create a disk-shaped structuring element, where r specifies the radius and then perform morphological closing.
 se = strel('disk',2);
+
+% Perform morphological closing on the grayscale or binary image bw, using the structuring element SE. The morphological close operation is a dilation followed by an erosion, using the same structuring element for both operations.
 bw = imclose(bw,se);
 imshow(bw)
 
-%%
+%% Fill holes in the input binary image bw. In this syntax, a hole is a set of background pixels that cannot be reached by filling in the background from the edge of the image.
 bw = imfill(bw,'holes');
 imshow(bw)
 
-%%
-% bw = imfill(bw,'holes');
-% imshow(bw)
-
-%%
+%% Traces the exterior boundaries of objects.
 [B,L] = bwboundaries(bw,'noholes');
 
-%%
+%% Detect boundaries
 imshow(label2rgb(L,@jet,[.5 .5 .5]))
 hold on
 for k = 1:length(B)
@@ -32,7 +37,9 @@ for k = 1:length(B)
   plot(boundary(:,2),boundary(:,1),'w','LineWidth',2)
 end
 
-%%
+%% Find roundness of detected pancakes and display values larger than the threshold.
+
+% Measures area for each labeled region in label image L.
 stats = regionprops(L,'Area','Centroid');
 
 threshold = 0.4;
@@ -66,45 +73,3 @@ for k = 1:length(B)
        'FontSize',14,'FontWeight','bold')
   end
 end
-
-title(['Metrics Closer to 1 Indicate that ',...
-       'the Object is Approximately Round'])
-
-% 
-% [~,threshold] = edge(I1,'sobel');
-% fudgeFactor = 0.6;
-% BWs = edge(I1,'sobel',threshold * fudgeFactor);
-% 
-% imshow(BWs)
-% title('Binary Gradient Mask')
-% 
-% se90 = strel('line',3,90);
-% se0 = strel('line',3,20);
-% 
-% BWsdil = imdilate(BWs,[se90 se0]);
-% imshow(BWsdil)
-% title('Dilated Gradient Mask')
-% 
-% BWdfill = imfill(BWsdil,'holes');
-% imshow(BWdfill)
-% title('Binary Image with Filled Holes')
-% 
-% 
-% BWnobord = imclearborder(BWdfill,26);
-% imshow(BWnobord)
-% title('Cleared Border Image')
-% 
-% seD = strel('diamond',1);
-% BWfinal = imerode(BWnobord,seD);
-% BWfinal = imerode(BWfinal,seD);
-% imshow(BWfinal)
-% title('Segmented Image');
-% 
-% imshow(labeloverlay(I1,BWfinal))
-% title('Mask Over Original Image')
-% BWoutline = bwperim(BWfinal);
-% Segout = I1; 
-% Segout(BWoutline) = 255; 
-% imshow(Segout)
-% title('Outlined Original Image')
-% 
