@@ -4,6 +4,7 @@ EEE Final Year Project
 This repository contains the code used for the EEE4022S Final Year Project, RAV2022-05. The aim of this project is to develop an image processing and parameter extraction algorithm. This project forms the preliminary investigation for extracting and estimating size and shape of pancake ice floes from images.
 
 ## Calibrate Stereo Set-up
+This program calibrates stereo parameters using checkerboard images captured during the calibration process.
 https://github.com/GregDaSilva/EEE4022S/blob/main/Rugby_Field_StereoCamCalibrate.m
 
 ## Rugby Field Calibration Script
