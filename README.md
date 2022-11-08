@@ -1,4 +1,4 @@
-# EEE4022S EEE Final Year Project
+# EEE4022S: UCT Department of Electrical Engineering Final Year Project
 
 This repository contains the code used for the EEE4022S Final Year Project, RAV2022-05. 
 The aim of this project is to develop an image processing and parameter extraction algorithm. 
